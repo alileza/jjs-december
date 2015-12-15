@@ -1,0 +1,14 @@
+{
+  "name": "jakarta-js",
+  "version": "1.0.0",
+  "description": "JakartaJS December Slide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Reza",
+  "license": "ISC",
+  "dependencies": {
+    "kue": "^0.10.4"
+  }
+}
