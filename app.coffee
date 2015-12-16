@@ -1,13 +1,9 @@
 express = require 'express'
 app = express()
 
-kue = require('kue')
-kue.app.listen(3000)
-queue = kue.createQueue()
-
+messenger = require('kue-messenger')(3000)
 
 app.get '/', (request, response, next) ->
-
   return response.send """
   <form method="POST">
     <button type="submit">Sign Up</button>
@@ -18,16 +14,13 @@ app.post '/', (request, response, next) ->
 
   message = { hello: "world" }
 
-  queue.create("email-notification", message).save()
+  messenger.send("send-email", { "message" : "pesan selamat datang", "type" : "welcome-email" })
+  messenger.send("send-push-notification", { "message" : "pesan selamat datang" })
+  messenger.send("crop-picture", { "message" : "resize and crop" })
+  messenger.send("find-match", { "message" : "find match" })
 
   return response.redirect '/'
 
-
-queue.process 'email-notification', (job, done) ->
-  console.dir job.data
-  setTimeout () ->
-    done()
-  , 3000
 
 app.listen 1312, () ->
   { address, port } = @address()
