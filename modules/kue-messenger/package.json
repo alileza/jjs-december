@@ -1,0 +1,54 @@
+{
+  "name": "kue-messenger",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alileza/messenger.git"
+  },
+  "keywords": [
+    "queue",
+    "messaging",
+    "kue",
+    "redis"
+  ],
+  "author": {
+    "name": "Ali Reza"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alileza/messenger/issues"
+  },
+  "homepage": "https://github.com/alileza/messenger#readme",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "kue": "^0.9.6",
+    "underscore": "^1.8.3"
+  },
+  "_id": "kue-messenger@1.0.0",
+  "_shasum": "4103b9b6172960a3c95e5a9c479aafc9cbc5d6c2",
+  "_from": "kue-messenger@*",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "alileza",
+    "email": "alirezayahya@gmail.com"
+  },
+  "dist": {
+    "shasum": "4103b9b6172960a3c95e5a9c479aafc9cbc5d6c2",
+    "tarball": "http://registry.npmjs.org/kue-messenger/-/kue-messenger-1.0.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "alileza",
+      "email": "alirezayahya@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/kue-messenger/-/kue-messenger-1.0.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
