@@ -1,7 +1,7 @@
 express = require 'express'
 app = express()
 
-messenger = require('kue-messenger')(3000)
+messenger = require('./modules/kue-messenger')(3000)
 
 app.get '/', (request, response, next) ->
   return response.send """

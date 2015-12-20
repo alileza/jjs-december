@@ -1,4 +1,4 @@
-messenger = require('kue-messenger')()
+messenger = require('../modules/kue-messenger')()
 
 messenger.listen 'crop-picture', (job, done) ->
   console.time "#{JSON.stringify(job.data)} IS DONE !"
